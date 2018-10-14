@@ -1,5 +1,4 @@
-﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
+﻿using PracticeRnD.InterfaceDemo;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -11,7 +10,6 @@ namespace PracticeRnD
 {
     class Program
     {
-
         //public static IWebDriver driver = new ChromeDriver();        
 
         static void Main(string[] args)
@@ -35,11 +33,26 @@ namespace PracticeRnD
             //Console.ReadLine();           
             //driver.Quit();
 
-
             Console.WriteLine("Save");
-
             CollectionsListDemo collectionsList = new CollectionsListDemo();
             collectionsList.ListDemo("Aniket", "Pallavi", "Shubham","Shruti","Palla");
+
+            IWebDriver driver = new Chrome();
+            driver.Click();
+            driver.FindElement();
+            driver.SendKeys();
+
+            IWebDriver driver1 = new Firefox();
+            driver1.Click();
+            driver1.FindElement();
+            driver1.SendKeys();
+
+            IWebDriver driver2 = new IE();
+            driver2.Click();
+            driver2.FindElement();
+            driver2.SendKeys();
+            
+            Console.ReadLine();            
         }
     }
 }

@@ -58,6 +58,10 @@
   <ItemGroup>
     <Compile Include="AbstractClassDemo.cs" />
     <Compile Include="CollectionsListDemo.cs" />
+    <Compile Include="InterfaceDemo\Chrome.cs" />
+    <Compile Include="InterfaceDemo\Firefox.cs" />
+    <Compile Include="InterfaceDemo\IE.cs" />
+    <Compile Include="InterfaceDemo\IWebDriver.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
