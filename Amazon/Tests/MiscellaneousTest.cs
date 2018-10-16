@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 namespace Amazon.Tests
 {
     [TestFixture]
+    [Ignore("Skip Tests")]
     public class MiscellaneousTest:AmazonBase
     {
 

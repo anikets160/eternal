@@ -31,6 +31,7 @@ namespace Amazon.Reports
         }
         
         [Test]
+        [Ignore("Skip Tests")]
         public void StartTest()
         {
             ExtentTest = Extent.CreateTest("SampleReporting");
