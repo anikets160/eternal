@@ -41,6 +41,7 @@ namespace Amazon.Reports
             //LoginPage.Continue();
             ExtentTest.Log(Status.Pass,"Pass");
             Extent.AddTestRunnerLogs("TestEnd");
+            
         }
 
         [OneTimeTearDown]

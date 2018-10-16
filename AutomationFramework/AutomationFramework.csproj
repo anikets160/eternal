@@ -68,6 +68,7 @@
     <Compile Include="CommonFunctions\DataManager.cs" />
     <Compile Include="CommonFunctions\LoginTestDataManager.cs" />
     <Compile Include="CommonFunctions\FunctionLibrary.cs" />
+    <Compile Include="CommonFunctions\WebDriverExtension.cs" />
     <Compile Include="PageObjects\BasePage.cs" />
     <Compile Include="PageObjects\CustomerPage.cs" />
     <Compile Include="PageObjects\LandingPage.cs" />
