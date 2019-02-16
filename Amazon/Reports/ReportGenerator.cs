@@ -14,7 +14,7 @@ namespace Amazon.Reports
     public class ReportGenerator:AmazonBase
     {
         public static ExtentReports Extent;
-        public static ExtentTest ExtentTest;
+        public static ExtentTest ExtentTest; 
 
         [OneTimeSetUp]
         public void StartReport()
