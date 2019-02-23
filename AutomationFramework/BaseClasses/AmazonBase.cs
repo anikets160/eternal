@@ -15,6 +15,7 @@ using System.Threading.Tasks;
 
 namespace AutomationFramework.BaseClasses
 {
+    // Base class for initial setup and teardown
     public class AmazonBase
     {
         public static IWebDriver driver;
