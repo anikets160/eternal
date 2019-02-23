@@ -30,6 +30,7 @@ namespace AutomationFramework.BaseClasses
         //    safari
         //}
 
+        // Initialization method
         public void Initialize()
         {
             string browser = ConfigurationManager.AppSettings.Get("Browser");
