@@ -12,7 +12,7 @@ namespace PartialClassConcept
         {
             Employee employee = new Employee(101, "Aniket", 1600000);
             employee.PrintDetails();
-            employee.PrintSalary();
+            //employee.PrintSalary();
             Console.ReadKey();
         }
     }
