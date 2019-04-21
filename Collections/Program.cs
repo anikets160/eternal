@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace Collections
 {
     
+    public class Program
     {
         static void Main(string[] args)
         {
