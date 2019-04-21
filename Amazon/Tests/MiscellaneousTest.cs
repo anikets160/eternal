@@ -21,6 +21,9 @@ namespace Amazon.Tests
 
             Console.WriteLine(listOfElements.Count);
 
+            Proxy proxy = new Proxy();
+            proxy.HttpProxy = "";
+
         }
 
     }
