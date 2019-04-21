@@ -15,14 +15,10 @@ namespace PartialClassConcept
             //employee.PrintDetails();
 
             employee.PrintDetails();
-<<<<<<< HEAD
-            //employee.PrintSalary();
-            //Console.ReadKey();
-=======
 
             employee.PrintSalary();
             Console.ReadKey();
->>>>>>> 5333b36dea81f3126d1a4993fe27ca31c79cb3bc
+
         }
     }
 }
