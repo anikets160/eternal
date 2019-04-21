@@ -14,6 +14,7 @@ namespace PartialClassConcept
 <<<<<<< HEAD
             //employee.PrintDetails();
 =======
+            employee.PrintDetails();
 >>>>>>> 123c092190021c5eb1ba75e5882bbd22f0351bb0
             //employee.PrintSalary();
             Console.ReadKey();
