@@ -16,7 +16,7 @@ namespace PartialClassConcept
 
             employee.PrintDetails();
 
-            //employee.PrintSalary();
+            employee.PrintSalary();
             Console.ReadKey();
         }
     }
