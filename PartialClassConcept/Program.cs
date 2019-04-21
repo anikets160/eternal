@@ -12,8 +12,10 @@ namespace PartialClassConcept
         {
             Employee employee = new Employee(101, "Aniket", 1600000);
             employee.PrintDetails();
+<<<<<<< HEAD
             //employee.PrintSalary();
             //Console.ReadKey();
+=======
         }
     }
 }
