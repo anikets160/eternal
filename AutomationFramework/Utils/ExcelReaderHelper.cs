@@ -1,19 +1,21 @@
 ﻿using NUnit.Framework;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using excel = Microsoft.Office.Interop.Excel;
 
-namespace AutomationFramework.CommonFunctions
+namespace AutomationFramework.Utils
 {
-    public class DataManager:IEnumerable<string[]>
+    [TestFixture]
+    public class ExcelReaderHelper
     {
         static string[] Username;
+
+        [Test]
         public static void ReadExcelData()
-        {
+        {            
             //Creates excel application
             excel.Application x1App = new excel.Application();
 
@@ -31,23 +33,10 @@ namespace AutomationFramework.CommonFunctions
                 //Gets cell value of 'i'th row and 1st column value
                 Username = (string[])x1Range.Cells[i][1].value2;
             }
+
+            Console.WriteLine(Username);
             x1WorkBook.Close(true);
             x1App.Quit();
-        }
-
-        public IEnumerator GetEnumerator()
-        {
-            return Username.GetEnumerator();
-        }
-
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            return GetEnumerator();
-        }
-
-        IEnumerator<string[]> IEnumerable<string[]>.GetEnumerator()
-        {
-            throw new NotImplementedException();
         }
     }
 }
