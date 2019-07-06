@@ -23,14 +23,6 @@ namespace AutomationFramework.BaseClasses
         public static readonly log4net.ILog log = log = log4net.LogManager.GetLogger("Base");
         public static WebDriverWait wait;
 
-        //enum Browser
-        //{
-        //    chrome,
-        //    firefox,
-        //    ie,
-        //    safari
-        //}
-
         // Initialization method
         public void Initialize()
         {
