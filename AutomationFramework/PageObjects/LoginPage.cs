@@ -11,14 +11,6 @@ namespace AutomationFramework.PageObjects
 {
     public class LoginPage:AmazonBase
     {
-        //public LoginPage(IWebDriver driver):base(driver) { }
-
-        //[FindsBy(How =How.XPath,Using = "//input[@id='ap_email']")]
-        //public IWebElement EmailOrMobileNumbertxt { get; set; }
-
-        //[FindsBy(How = How.XPath, Using = "//input[@id='continue']")]
-        //public IWebElement ContinueBtn { get; set; }
-
         public IWebElement EmailOrMobileNumbertxt => driver.FindElement(By.XPath("//input[@id='ap_email']"));
         public IWebElement ContinueBtn => driver.FindElement(By.XPath("//input[@id='continue']"));
 
