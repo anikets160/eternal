@@ -56,6 +56,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\TestFramework\Utils\ReportHelper.cs">
+      <Link>ReportHelper.cs</Link>
+    </Compile>
     <Compile Include="AbstractClassDemo.cs" />
     <Compile Include="CollectionsListDemo.cs" />
     <Compile Include="InterfaceDemo\Chrome.cs" />
