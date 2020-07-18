@@ -1,4 +1,6 @@
-﻿using NUnit.Framework;
+﻿using AventStack.ExtentReports;
+using AventStack.ExtentReports.Reporter;
+using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
@@ -9,12 +11,16 @@ using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TestFramework.Utils;
 
 namespace TestFramework.Base
 {
     public class Base
     {
         public static IWebDriver driver;
+        public static ExtentHtmlReporter extentHtmlReporter;
+        public static ExtentReports extentReports;
+        public static ExtentTest extentTest = null;
 
         public void Initalize()
         {
@@ -37,7 +43,7 @@ namespace TestFramework.Base
             driver.Manage().Window.Maximize();
             driver.Manage().Cookies.DeleteAllCookies();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromMilliseconds(2000);
-            //driver.Manage().Timeouts().PageLoad = TimeSpan.FromMilliseconds(5000);
+            driver.Manage().Timeouts().PageLoad = TimeSpan.FromMilliseconds(20000);
             driver.Navigate().GoToUrl(ConfigurationManager.AppSettings.Get("browserURL"));
         }
 
@@ -45,6 +51,9 @@ namespace TestFramework.Base
         public void Setup()
         {
             Initalize();
+            extentHtmlReporter = new ExtentHtmlReporter(@"H:\ExtentReports\TestReport.html");
+            extentReports = new ExtentReports();
+            extentReports.AttachReporter(extentHtmlReporter);
         }
 
         [TearDown]

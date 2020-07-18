@@ -15,7 +15,9 @@ namespace TestProject.Tests
         [Test]
         public void Login()
         {
-
+            extentReports.CreateTest("Login");
+            //extentTest.Info("Login Test Completed");
+            //extentReports.Flush();
         }
 
     }
